@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Property Management System</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.oop.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RegisterServlet</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.oop.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.oop.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AdminLoginServlet</display-name>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AdminLogoutServlet</display-name>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AdminLogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <url-pattern>/AdminLogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddAdminServlet</display-name>
+    <servlet-name>AddAdminServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AddAdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddAdminServlet</servlet-name>
+    <url-pattern>/AddAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ListAdminServlet</display-name>
+    <servlet-name>ListAdminServlet</servlet-name>
+    <servlet-class>com.oop.servlet.ListAdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ListAdminServlet</servlet-name>
+    <url-pattern>/ListAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateAdminServlet</display-name>
+    <servlet-name>UpdateAdminServlet</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateAdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateAdminServlet</servlet-name>
+    <url-pattern>/UpdateAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateAdminServlet2</display-name>
+    <servlet-name>UpdateAdminServlet2</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateAdminServlet2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateAdminServlet2</servlet-name>
+    <url-pattern>/UpdateAdminServlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteAdminServlet</display-name>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteAdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <url-pattern>/DeleteAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddRoomServlet</display-name>
+    <servlet-name>AddRoomServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AddRoomServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddRoomServlet</servlet-name>
+    <url-pattern>/AddRoomServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ListRoomServlet</display-name>
+    <servlet-name>ListRoomServlet</servlet-name>
+    <servlet-class>com.oop.servlet.ListRoomServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ListRoomServlet</servlet-name>
+    <url-pattern>/ListRoomServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateRoomServlet</display-name>
+    <servlet-name>UpdateRoomServlet</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateRoomServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateRoomServlet</servlet-name>
+    <url-pattern>/UpdateRoomServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateRoomServlet2</display-name>
+    <servlet-name>UpdateRoomServlet2</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateRoomServlet2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateRoomServlet2</servlet-name>
+    <url-pattern>/UpdateRoomServlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteRoomServlet</display-name>
+    <servlet-name>DeleteRoomServlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteRoomServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteRoomServlet</servlet-name>
+    <url-pattern>/DeleteRoomServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddItem</display-name>
+    <servlet-name>AddItem</servlet-name>
+    <servlet-class>com.oop.servlet.AddItem</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddItem</servlet-name>
+    <url-pattern>/AddItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddPurchaseOrder</display-name>
+    <servlet-name>AddPurchaseOrder</servlet-name>
+    <servlet-class>com.oop.servlet.AddPurchaseOrder</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddPurchaseOrder</servlet-name>
+    <url-pattern>/AddPurchaseOrder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddSupplier</display-name>
+    <servlet-name>AddSupplier</servlet-name>
+    <servlet-class>com.oop.servlet.AddSupplier</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddSupplier</servlet-name>
+    <url-pattern>/AddSupplier</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <description></description>
+    <display-name>DeleteItem</display-name>
+    <servlet-name>DeleteItem</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteItem</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteItem</servlet-name>
+    <url-pattern>/DeleteItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteSupplier</display-name>
+    <servlet-name>DeleteSupplier</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteSupplier</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteSupplier</servlet-name>
+    <url-pattern>/DeleteSupplier</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <description></description>
+    <display-name>GetItem</display-name>
+    <servlet-name>GetItem</servlet-name>
+    <servlet-class>com.oop.servlet.GetItem</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetItem</servlet-name>
+    <url-pattern>/GetItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GetItemDelete</display-name>
+    <servlet-name>GetItemDelete</servlet-name>
+    <servlet-class>com.oop.servlet.GetItemDelete</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetItemDelete</servlet-name>
+    <url-pattern>/GetItemDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GetSupplierDelete</display-name>
+    <servlet-name>GetSupplierDelete</servlet-name>
+    <servlet-class>com.oop.servlet.GetSupplierDelete</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetSupplierDelete</servlet-name>
+    <url-pattern>/GetSupplierDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GetSupplierUpdate</display-name>
+    <servlet-name>GetSupplierUpdate</servlet-name>
+    <servlet-class>com.oop.servlet.GetSupplierUpdate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetSupplierUpdate</servlet-name>
+    <url-pattern>/GetSupplierUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GRN</display-name>
+    <servlet-name>GRN</servlet-name>
+    <servlet-class>com.oop.servlet.GRN</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GRN</servlet-name>
+    <url-pattern>/GRN</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SupplierUpdate</display-name>
+    <servlet-name>SupplierUpdate</servlet-name>
+    <servlet-class>com.oop.servlet.SupplierUpdate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SupplierUpdate</servlet-name>
+    <url-pattern>/SupplierUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateItem</display-name>
+    <servlet-name>UpdateItem</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateItem</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateItem</servlet-name>
+    <url-pattern>/UpdateItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewGRN</display-name>
+    <servlet-name>ViewGRN</servlet-name>
+    <servlet-class>com.oop.servlet.ViewGRN</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ViewGRN</servlet-name>
+    <url-pattern>/ViewGRN</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewAllGRN</display-name>
+    <servlet-name>ViewAllGRN</servlet-name>
+    <servlet-class>com.oop.servlet.ViewAllGRN</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ViewAllGRN</servlet-name>
+    <url-pattern>/ViewAllGRN</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewItem</display-name>
+    <servlet-name>ViewItem</servlet-name>
+    <servlet-class>com.oop.servlet.ViewItem</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ViewItem</servlet-name>
+    <url-pattern>/ViewItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewPurchaseOrder</display-name>
+    <servlet-name>ViewPurchaseOrder</servlet-name>
+    <servlet-class>com.oop.servlet.ViewPurchaseOrder</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ViewPurchaseOrder</servlet-name>
+    <url-pattern>/ViewPurchaseOrder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewAllPurchaseOrders</display-name>
+    <servlet-name>ViewAllPurchaseOrders</servlet-name>
+    <servlet-class>com.oop.servlet.ViewAllPurchaseOrders</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ViewAllPurchaseOrders</servlet-name>
+    <url-pattern>/ViewAllPurchaseOrders</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewSupplier</display-name>
+    <servlet-name>ViewSupplier</servlet-name>
+    <servlet-class>com.oop.servlet.ViewSupplier</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ViewSupplier</servlet-name>
+    <url-pattern>/ViewSupplier</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <description></description>
+    <display-name>addRoomStateservlet</display-name>
+    <servlet-name>addRoomStateservlet</servlet-name>
+    <servlet-class>com.oop.servlet.addRoomStateservlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addRoomStateservlet</servlet-name>
+    <url-pattern>/addRoomStateservlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>assigntaskServlet</display-name>
+    <servlet-name>assigntaskServlet</servlet-name>
+    <servlet-class>com.oop.servlet.assigntaskServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>assigntaskServlet</servlet-name>
+    <url-pattern>/assigntaskServlet</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+    <description></description>
+    <display-name>assigntaskUpdateServlet</display-name>
+    <servlet-name>assigntaskUpdateServlet</servlet-name>
+    <servlet-class>com.oop.servlet.assigntaskUpdateServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>assigntaskUpdateServlet</servlet-name>
+    <url-pattern>/assigntaskUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+         <servlet>
+    <description></description>
+    <display-name>registerservletHK</display-name>
+    <servlet-name>registerservletHK</servlet-name>
+    <servlet-class>com.oop.servlet.registerservletHK</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>registerservletHK</servlet-name>
+    <url-pattern>/registerservletHK</url-pattern>
+  </servlet-mapping>
+  
+           <servlet>
+    <description></description>
+    <display-name>removeAssigntaskservlet</display-name>
+    <servlet-name>removeAssigntaskservlet</servlet-name>
+    <servlet-class>com.oop.servlet.removeAssigntaskservlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>removeAssigntaskservlet</servlet-name>
+    <url-pattern>/removeAssigntaskservlet</url-pattern>
+  </servlet-mapping>
+  
+          <servlet>
+    <description></description>
+    <display-name>removeStaffDetails</display-name>
+    <servlet-name>removeStaffDetails</servlet-name>
+    <servlet-class>com.oop.servlet.removeStaffDetails</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>removeStaffDetails</servlet-name>
+    <url-pattern>/removeStaffDetails</url-pattern>
+  </servlet-mapping>
+  
+            <servlet>
+    <description></description>
+    <display-name>roomStateUpdateservlet</display-name>
+    <servlet-name>roomStateUpdateservlet</servlet-name>
+    <servlet-class>com.oop.servlet.roomStateUpdateservlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>roomStateUpdateservlet</servlet-name>
+    <url-pattern>/roomStateUpdateservlet</url-pattern>
+  </servlet-mapping>
+  
+             <servlet>
+    <description></description>
+    <display-name>updatestaffDetailsServlet</display-name>
+    <servlet-name>updatestaffDetailsServlet</servlet-name>
+    <servlet-class>com.oop.servlet.updatestaffDetailsServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>updatestaffDetailsServlet</servlet-name>
+    <url-pattern>/updatestaffDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>updateREGdetails</display-name>
+    <servlet-name>updateREGdetails</servlet-name>
+    <servlet-class>com.oop.servlet.updateREGdetails</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>updateREGdetails</servlet-name>
+    <url-pattern>/updateREGdetails</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>updateassignTaskServlet</display-name>
+    <servlet-name>updateassignTaskservlet</servlet-name>
+    <servlet-class>com.oop.servlet.updateassignTaskservlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>updateassignTaskservlet</servlet-name>
+    <url-pattern>/updateassignTaskservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>updateRoomSTATEservlet</display-name>
+    <servlet-name>updateRoomSTATEservlet</servlet-name>
+    <servlet-class>com.oop.servlet.updateRoomSTATEservlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>updateRoomSTATEservlet</servlet-name>
+    <url-pattern>/updateRoomSTATEservlet</url-pattern>
+  </servlet-mapping>
+  
+           <servlet>
+    <description></description>
+    <display-name>viewAssigntaskservlet</display-name>
+    <servlet-name>viewAssigntaskservlet</servlet-name>
+    <servlet-class>com.oop.servlet.viewAssigntaskservlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>viewAssigntaskservlet</servlet-name>
+    <url-pattern>/viewAssigntaskservlet</url-pattern>
+  </servlet-mapping>
+  
+             <servlet>
+    <description></description>
+    <display-name>viewdataservlet</display-name>
+    <servlet-name>viewdataservlet</servlet-name>
+    <servlet-class>com.oop.servlet.viewdataservlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>viewdataservlet</servlet-name>
+    <url-pattern>/viewdataservlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>AddBookInfoServlet</display-name>
+    <servlet-name>AddBookInfoServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AddBookInfoServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>AddBookInfoServlet</servlet-name>
+    <url-pattern>/AddBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteBookInfoServlet</display-name>
+    <servlet-name>DeleteBookInfoServlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteBookInfoServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>DeleteBookInfoServlet</servlet-name>
+    <url-pattern>/DeleteBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GetBookInfoServlet</display-name>
+    <servlet-name>GetBookInfoServlet</servlet-name>
+    <servlet-class>com.oop.servlet.GetBookInfoServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>GetBookInfoServlet</servlet-name>
+    <url-pattern>/GetBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ListBookInfoServlet</display-name>
+    <servlet-name>ListBookInfoServlet</servlet-name>
+    <servlet-class>com.oop.servlet.ListBookInfoServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>ListBookInfoServlet</servlet-name>
+    <url-pattern>/ListBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateBookInfoServlet</display-name>
+    <servlet-name>UpdateBookInfoServlet</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateBookInfoServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>UpdateBookInfoServlet</servlet-name>
+    <url-pattern>/UpdateBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+</element>
